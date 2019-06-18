@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample_Paint</title>
+    <style type="text/css"><!--
+      #container { position: relative; }
+      #imageView { border: 1px solid #000; }
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+      }
+        h1 {
+            color: red;
+            text-align: center;
+            font-family: sans-serif;
+            
+        }
+        h5 {
+            color: blue;
+            text-align: right;
+            position: absolute;
+            top:10px;
+            right: 400px;
+
+        }
+        h5.absolute{
+                    }
+        h6 {
+            color: black;
+            text-align: left;
+            position: absolute;
+            top: -50px;
+        }
+    --></style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js">
+</script>
+<script type="text/javascript" src="pritam.js"></script>
+<script type="text/javascript" src="raj.js"></script>    
+  </head>
+  <body>
+      <h1>SAMPLE PAINT APPLICATION
+      <sub><strong><h5>Pritam Raj</h5></strong></sub></h1>
+    <div id="container" style="padding:5px 0px 0px 0px;">
+        <h6><b>Choose Color</b></h6>
+<div id="colorToolbar" style="border: 1px solid black; float: left;"> 
+<div id="red" style="background:red; width:50px; height:50px; float:left;"></div>
+<div style="clear: both;"></div> 
+<div id="pink" style="background:pink; width:50px; height:50px; float:left;"></div>
+<div style="clear: both;"></div> 
+<div id="fuchsia" style="background:fuchsia; width:50px; height:50px; float:left;"></div>
+<div style="clear: both;"></div> 
+<div id="orange" style="background:orange; width:50px; height:50px; float:left;"></div>
+<div style="clear: both;"></div> 
+<div id="yellow" style="background:yellow; width:50px; height:50px; float:left;"></div>
+<div style="clear: both;"></div> 
+<div id="lime" style="background:lime; width:50px; height:50px; float:left;"></div>
+<div style="clear: both;"></div> 
+<div id="green" style="background:green; width:50px; height:50px; float:left;"></div>
+<div style="clear: both;"></div> 
+<div id="blue" style="background:blue; width:50px; height:50px; float:left;"></div>
+<div style="clear: both;"></div> 
+<div id="purple" style="background:purple; width:50px; height:50px; float:left;"></div>
+<div style="clear: both;"></div> 
+<div id="black" style="background:black; width:50px; height:50px; 
+float:left; border: 1px dashed white;"></div>
+<div style="clear: both;"></div> 
+        </div> 
+        <div id="canvasDiv" style="float: left;">
+          <canvas id="imageView">
+          </canvas>        
+        </div>
+<div id="stats" style="font-size:8pt; padding-left: 50px; float: left;">0 0</div>        
+    </div>
+      <button onClick="Window.clear()">Clear</button>
+  </body>
+</html>
